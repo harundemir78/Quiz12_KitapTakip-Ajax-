@@ -8,55 +8,31 @@
     <link href="style/style.css" rel="stylesheet" />
     <script src="script/jquery-3.1.0.js"></script>
     <script src="script/AjaxMethodlar.js"></script>
-    <script>
+   
 
-        function kayit() {
-          
-            
-            var ad = $('#k_txtAd').val();
-            var soyad = $('#k_txtSoyad').val();
-            var mail = $('#k_txtMail').val();
-            var user = $('#k_txtKulAd').val();
-            var pass = $('#k_txtParola').val();
-            var pass2 = $('#k_txtParola2').val();
-           
-            $.ajax({
-            
-                type: 'POST',
-                dataType: 'json',
-                contentType: 'application/json',
-                url: 'kayit.aspx/Kayit',
-                data: '{ad:' + JSON.stringify(ad) + ',soyad:' + JSON.stringify(soyad) + ',mail:' + JSON.stringify(mail) + ',user:' + JSON.stringify(user) + ',pass:' + JSON.stringify(pass) + '}',
-                success: function (resul) {
-                    
-                    alert("eklendi");
-                },
-                error: function (error) {
-                    
-                    alert(error);
-                }
-            })
-
-        }
-    </script>
-  
 </head>
 <body>
-    
+
     <form id="form1" runat="server">
         <div id="dis">
             <div id="banner">
-                <div id="logo"><img src="img/logo.png" /> </div>
+                <div id="logo">
+                    <img src="img/logo.png" />
+                </div>
                 <div id="baslik">
-                    <div id="name"><p>Kitap Furyası</p></div>
-                    <div id="soz"><p><i>Yufka yüreğini herkese açarsan bir gün kolböreği olarak sana geri döner...</i></p></div>
+                    <div id="name">
+                        <p>Kitap Furyası</p>
+                    </div>
+                    <div id="soz">
+                        <p><i>Yufka yüreğini herkese açarsan bir gün kolböreği olarak sana geri döner...</i></p>
+                    </div>
                 </div>
             </div>
             <div id="menu">
                 <div id="master">
                     <ul>
-                       <li> <a href="satis.aspx">KİTAP AL</a></li>
-                        <li><a href ="sepet.aspx"> KİTAPLARIM</a></li>
+                        <li><a href="satis.aspx">KİTAP AL</a></li>
+                        <li><a href="sepet.aspx">KİTAPLARIM</a></li>
                     </ul>
                 </div>
                 <div id="content">
@@ -64,15 +40,14 @@
                 </div>
             </div>
             <div id="govde">
-                <asp:ContentPlaceHolder runat="server" ID="govdeContent"
-                    ></asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder runat="server" ID="govdeContent">
+                </asp:ContentPlaceHolder>
             </div>
         </div>
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
     </form>
 </body>
 </html>

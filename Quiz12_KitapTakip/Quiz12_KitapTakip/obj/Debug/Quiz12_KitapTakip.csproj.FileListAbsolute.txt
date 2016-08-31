@@ -6,3 +6,10 @@ c:\users\harun\documents\visual studio 2013\Projects\Quiz12_KitapTakip\Quiz12_Ki
 c:\users\harun\documents\visual studio 2013\Projects\Quiz12_KitapTakip\Quiz12_KitapTakip\obj\Debug\Quiz12_KitapTakip.pdb
 c:\users\harun\documents\visual studio 2013\Projects\Quiz12_KitapTakip\Quiz12_KitapTakip\bin\Newtonsoft.Json.dll
 c:\users\harun\documents\visual studio 2013\Projects\Quiz12_KitapTakip\Quiz12_KitapTakip\bin\Newtonsoft.Json.xml
+C:\Users\Harun\Documents\GitHub\Quiz12_KitapTakip-Ajax-\Quiz12_KitapTakip\Quiz12_KitapTakip\bin\Quiz12_KitapTakip.dll.config
+C:\Users\Harun\Documents\GitHub\Quiz12_KitapTakip-Ajax-\Quiz12_KitapTakip\Quiz12_KitapTakip\bin\Quiz12_KitapTakip.dll
+C:\Users\Harun\Documents\GitHub\Quiz12_KitapTakip-Ajax-\Quiz12_KitapTakip\Quiz12_KitapTakip\bin\Quiz12_KitapTakip.pdb
+C:\Users\Harun\Documents\GitHub\Quiz12_KitapTakip-Ajax-\Quiz12_KitapTakip\Quiz12_KitapTakip\bin\Newtonsoft.Json.dll
+C:\Users\Harun\Documents\GitHub\Quiz12_KitapTakip-Ajax-\Quiz12_KitapTakip\Quiz12_KitapTakip\bin\Newtonsoft.Json.xml
+C:\Users\Harun\Documents\GitHub\Quiz12_KitapTakip-Ajax-\Quiz12_KitapTakip\Quiz12_KitapTakip\obj\Debug\Quiz12_KitapTakip.dll
+C:\Users\Harun\Documents\GitHub\Quiz12_KitapTakip-Ajax-\Quiz12_KitapTakip\Quiz12_KitapTakip\obj\Debug\Quiz12_KitapTakip.pdb

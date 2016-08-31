@@ -104,6 +104,7 @@
     <Compile Include="kayit.aspx.designer.cs">
       <DependentUpon>kayit.aspx</DependentUpon>
     </Compile>
+    <Compile Include="KayitKontrol.cs" />
     <Compile Include="Kisi.cs" />
     <Compile Include="main.Master.cs">
       <DependentUpon>main.Master</DependentUpon>

@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Newtonsoft.Json;
+using System.Web.Services;
 namespace Quiz12_KitapTakip
 {
     public partial class kayit : System.Web.UI.Page
@@ -16,17 +17,21 @@ namespace Quiz12_KitapTakip
         {
 
         }
+        [WebMethod]
         public static void Kayit(string ad,string soyad,string mail,string user,string  pass)
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["kitap"].ConnectionString);
-            SqlCommand cmd = new SqlCommand("insert into tblUye (ad,soyad,mail,durum,kulAd,parola) values(@ad,@soyad,@mail,@kulAd,@parola)", conn);
-            cmd.Parameters.AddWithValue("@ad",ad);
-            cmd.Parameters.AddWithValue("@soyad", soyad);
-            cmd.Parameters.AddWithValue("@mail",mail);
-            cmd.Parameters.AddWithValue("@kulAd",user);
-            cmd.Parameters.AddWithValue("@parola",pass);
+            
+            
+            SqlDataAdapter adapter = new SqlDataAdapter("insert into tblUye (ad,soyad,mail,kulAd,parola) values(@ad,@soyad,@mail,@kulAd,@parola)", conn);
+            adapter.SelectCommand.Parameters.AddWithValue("ad", ad);
+            adapter.SelectCommand.Parameters.AddWithValue("soyad", soyad);
+            adapter.SelectCommand.Parameters.AddWithValue("mail", mail);
+            adapter.SelectCommand.Parameters.AddWithValue("kulAd", user);
+            adapter.SelectCommand.Parameters.AddWithValue("parola", pass);
+           
             conn.Open();
-            cmd.ExecuteNonQuery();
+            adapter.SelectCommand.ExecuteNonQuery();
             conn.Close();
           
            
